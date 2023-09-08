@@ -1,0 +1,15 @@
+create database duydb;
+use duydb; 
+CREATE TABLE customers
+    (id int(10),
+     name varchar(50),
+     city varchar(50),
+     PRIMARY KEY (id )
+    );
+ALTER TABLE customers   
+ADD age varchar(50);    
+insert into customers values(1,'nam','hcm','23'); 
+insert into customers values(2,'duy','hcm','24');  
+insert into customers values(3,'son','hcm','24'); 
+delete from customers where id=1;    
+update customers set name = "duy1" where id = 2;
